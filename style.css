@@ -3,20 +3,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Istok Web", sans-serif;
 }
 
 /*Variables*/
 :root {
-    --coblack1: #000000;
-    --coblack2: #191919;
-    --coblack3: #323232;
-    --cowhite1: #ffffff;
-    --cowhite2: #dbdbdb;
+    --color1: #000000;
+    --color2: #191919;
+    --color3: #323232;
+    --color4: #ffffff;
+    --color5: #dbdbdb;
+    --min-width: 360px;
 }
 
 /*Body*/
 body {
-    background-color: var(--coblack3);
+    background-color: var(--color3);
+    min-width: var(--min-width);
 }
 
 /*Barra de Navegación*/
@@ -36,21 +40,12 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--coblack2);
-    color: var(--cowhite1);
+    background-color: var(--color2);
+    color: var(--color4);
     border-radius: 10px;
     height: 50px;
     padding-left: 30px;
     padding-right: 30px;
-}
-
-/*Menu Hamburguesa*/
-.nav-bar__checkbox {
-    display: none;
-}
-
-.nav-bar {
-    font-size: 20px;
 }
 
 /*Nav-logo*/
@@ -61,14 +56,65 @@ body {
 }
 
 .nav-img_logo {
-    height: 40px;
+    height: 36px;
 }
 
 /*Nav-listas*/
 .nav-ul {
     position: absolute;
+    flex-direction: column;
+    border-radius: 10px;
+    top: 20px;
+    right: 20px;
+    height: 0;
+    transform: scaleY(0);
+    width: 10.5rem;
+    background-color: var(--color2);
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    z-index: -100;
 }
 
 .nav-ul_li {
-    display: inline-flex;
+    cursor: pointer;
+    display: inline-block;
+    text-align: right;
+    opacity: 0;
+}
+
+.nav-ul_li > a {
+    text-decoration: none;
+    color: var(--color4);
+}
+
+/*Menu Hamburguesa*/
+.nav-bar__checkbox {
+    display: none;
+}
+
+.nav-bar__label{
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-bar__label:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-bar__checkbox:checked ~ .nav-ul {
+    display: flex;
+    opacity: 1;
+    transform: scaleY(1);
+    height: 9rem;
+    width: 10.5rem;
+    padding: 20px;
+    justify-content: end;
+
+    .nav-ul_li {
+        font-size: 1em;
+        opacity: 1;
+    }
 }
