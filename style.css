@@ -80,6 +80,7 @@ body {
     cursor: pointer;
     display: inline-block;
     text-align: right;
+    -webkit-tap-highlight-color: transparent;
     opacity: 0;
 }
 
