@@ -63,14 +63,13 @@ body {
 .nav-ul {
     position: absolute;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: .5rem;
     top: 20px;
     right: 20px;
     height: 0;
     transform: scaleY(0);
     width: 10.5rem;
     gap: .5rem;
-    background-color: var(--color2);
     overflow: hidden;
     opacity: 0;
     transition: all .5s ease-in-out;
@@ -80,7 +79,8 @@ body {
 .nav-ul_li {
     cursor: pointer;
     display: inline-block;
-    text-align: right;
+    text-align: center;
+    padding: .7em;
     -webkit-tap-highlight-color: transparent;
     opacity: 0;
 }
@@ -110,17 +110,15 @@ body {
     display: flex;
     opacity: 1;
     transform: scaleY(1);
-    height: 12.3rem;
-    width: 10.5rem;
-    padding: 20px;
-    gap: 1.5rem;
+    height: 12.2rem;
+    width: 11rem;
+    gap: .3rem;
     justify-content: end;
 
     .nav-ul_li {
         font-size: 1em;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 10px;
+        background-color: var(--color2);
+        border-radius: .5rem;
         opacity: 1;
     }
 }
