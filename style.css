@@ -82,12 +82,26 @@ body {
     text-align: center;
     padding: .7em;
     -webkit-tap-highlight-color: transparent;
+    font-size: 1em;
+    border-radius: .5rem;
     opacity: 0;
 }
 
-.nav-ul_li > a {
+.li-a {
     text-decoration: none;
     color: var(--color4);
+}
+
+.log1 {
+    background-color: var(--color5);
+
+    a {
+        color: var(--color1);
+    }
+}
+
+.log2 {
+    background-color: var(--color1);
 }
 
 /*Menu Hamburguesa*/
@@ -110,15 +124,80 @@ body {
     display: flex;
     opacity: 1;
     transform: scaleY(1);
-    height: 12.2rem;
+    height: 20.2rem;
     width: 11rem;
     gap: .3rem;
+    background-color: var(--color2);
     justify-content: end;
 
+    .listCont, .logCont {
+        display: flex;
+        flex-direction: column;
+        gap: .2em;
+    }
+
     .nav-ul_li {
-        font-size: 1em;
-        background-color: var(--color2);
-        border-radius: .5rem;
         opacity: 1;
+    }
+
+    .liLog {
+        padding: .3em;
+        margin-left: .5em;
+        margin-right: .5em;
+        border-radius: .5em;
+    }
+
+    .log1 {
+        margin-top: 2em;
+    }
+
+    .log2 {
+        margin-top: .2em;
+        margin-bottom: .5em;
+    }
+}
+
+/*Responsive*/
+@media screen and (min-width: 1024px) {
+    .nav-bar__label{
+        display: none;
+    }
+    
+    /*Nav-listas*/
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    .nav-ul {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        transform: scaleY(1);
+        width: auto;
+        overflow: visible;
+        justify-content: space-between;
+        gap: .5em;
+        opacity: 1;
+        z-index: 10;
+    }
+
+    .nav-ul_li {
+        cursor: pointer;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+        opacity: 1;
+    }
+
+    .li-a {
+        padding: .11rem 1rem;
+        min-width: 4rem;
+    }
+
+    .li-a1 {
+        background-color: var(--color5);
+        color: var(--color1);
+        border-radius: 1em;
     }
 }
