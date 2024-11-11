@@ -69,6 +69,7 @@ body {
     height: 0;
     transform: scaleY(0);
     width: 10.5rem;
+    gap: .5rem;
     background-color: var(--color2);
     overflow: hidden;
     opacity: 0;
@@ -109,13 +110,17 @@ body {
     display: flex;
     opacity: 1;
     transform: scaleY(1);
-    height: 9rem;
+    height: 12.3rem;
     width: 10.5rem;
     padding: 20px;
+    gap: 1.5rem;
     justify-content: end;
 
     .nav-ul_li {
         font-size: 1em;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 10px;
         opacity: 1;
     }
 }
