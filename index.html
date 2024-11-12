@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script src="https://kit.fontawesome.com/02e5e8c236.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -26,25 +27,27 @@
                     <!--Lista de Secciones-->
                     <ul class="nav-ul">
                         <div class="listCont">
-                            <li class="nav-ul_li li1"><a class="li-a li-a1" href="#"><i class="fa-solid fa-handshake"></i> Sobre Nosotros</a></li>
-                            <li class="nav-ul_li li2"><a class="li-a li-a2" href="#"><i class="fa-solid fa-gamepad"></i> Juegos</a></li>
-                            <li class="nav-ul_li li3"><a class="li-a li-a3" href="#"><i class="fa-solid fa-circle-info"></i> Soporte</a></li>
+                            <li class="nav-ul_li le li1"><a class="li-a li-a1" href="#"><i class="fa-solid fa-handshake"></i> Sobre Nosotros</a></li>
+                            <li class="nav-ul_li le li2"><a class="li-a li-a2" href="#"><i class="fa-solid fa-gamepad"></i> Juegos</a></li>
+                            <li class="nav-ul_li le li3"><a class="li-a li-a3" href="#"><i class="fa-solid fa-circle-info"></i> Soporte</a></li>
                         </div>
                         <div class="logCont">
-                            <li class="nav-ul_li li4"><a class="li-a liLog log1" href="#"><i class="fa-solid fa-user-plus"></i> Registrarse</a></li>
-                            <li class="nav-ul_li li5"><a class="li-a liLog log2" href="#"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
+                            <li onclick="change(this)" id="lel" class="nav-ul_li lel li4"><a class="li-a liLog log1" href="#"><i class="fa-solid fa-user-plus"></i> Registrarse</a></li>
+                            <li onclick="change(this)" id="lel2" class="nav-ul_li lel li5"><a class="li-a liLog log2" href="#"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
                         </div>
                     </ul>
                 </div>
             </nav>
         </header>
-        <section>
-             
+        <section class="cont-sect1">
+             <div class="sect1-contImgs">
+                <img class="imgCarrusel" src="https://www.universidadviu.com/sites/universidadviu.com/files/images/qu%C3%A9%20es%20un%20gamer.jpg" alt="">
+             </div>
         </section>
         <footer>
 
         </footer>
         <!--JavaScript-->
-        <script type="module" src="script.js"></script>
+        <script src="script.js" defer></script>
     </body>
 </html>

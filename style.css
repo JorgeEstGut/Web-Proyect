@@ -1,6 +1,3 @@
-/*Import de animaciones*/
-@import url("animaciones-css/animations.css");
-
 /*Pagina*/
 * {
     margin: 0;
@@ -22,18 +19,21 @@
 /*Body*/
 body {
     background-color: var(--color3);
+    animation: fadeInUp;
+    animation-duration: 1s;
 }
 
 /*Barra de Navegación*/
 /*Contenedor*/
 .cont-nav {
     display: flex;
-    position: sticky;
+    position: fixed;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 20px;
     height: 80px;
+    backdrop-filter: blur(2px);
 }
 
 .nav {
@@ -47,8 +47,8 @@ body {
     height: 50px;
     padding-left: 30px;
     padding-right: 30px;
-    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: bounceIn;
+    animation-duration: .4s;
 }
 
 /*Nav-logo*/
@@ -76,7 +76,7 @@ body {
     overflow: hidden;
     opacity: 0;
     transition: all .5s ease-in-out;
-    z-index: -100;
+    z-index: -10;
 }
 
 .nav-ul_li {
@@ -93,7 +93,6 @@ body {
     text-decoration: none;
     color: var(--color4);
     border-radius: 1em;
-    font-weight: 500;
 }
 
 .log1 {
@@ -125,7 +124,7 @@ body {
     display: flex;
     opacity: 1;
     transform: scaleY(1);
-    height: 19rem;
+    height: 20rem;
     width: 11rem;
     gap: .3rem;
     background-color: var(--color2);
@@ -139,8 +138,8 @@ body {
 
     .nav-ul_li {
         opacity: 1;
-        -webkit-animation: bounce-in-top 1.1s both;
-	        animation: bounce-in-top 1.1s both;
+        animation: backInUp;
+        animation-duration: 1s;
     }
 
     .liLog {
@@ -159,6 +158,23 @@ body {
 }
 
 /*Seccion1-Slidder*/
+.cont-sect1 {
+    padding: 80px 20px 20px 20px;
+}
+
+.sect1-contImgs {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imgCarrusel {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
 
 /*Responsive*/
 @media screen and (min-width: 1024px) {
@@ -190,9 +206,9 @@ body {
         cursor: pointer;
         padding: 0;
         -webkit-tap-highlight-color: transparent;
+        font-size: .8em;
+        font-weight: 400;
         opacity: 1;
-        -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     .li-a {
@@ -200,8 +216,22 @@ body {
         min-width: 4rem;
     }
 
+    .le:hover {
+        animation: headShake;
+        animation-duration: .5s;
+    }
+
+    .leli {
+        animation: pulse;
+        animation-duration: 1s;
+    }
+
     .li-a1 {
         background-color: var(--color5);
         color: var(--color1);
+    }
+
+    .cont-sect1 {
+        height: 100vh;
     }
 }

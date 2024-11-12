@@ -17,3 +17,12 @@ menuItems.forEach(function(item) {
         icono.classList.replace("fa-xmark", "fa-bars");
     });
 });
+
+//pruba
+function change(item) {
+    let listLog = document.getElementById(item.id);
+    listLog.classList.add("leli");
+    setTimeout(() => {
+        listLog.classList.remove("leli");
+    }, 1000);
+}
