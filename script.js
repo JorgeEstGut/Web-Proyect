@@ -18,11 +18,35 @@ menuItems.forEach(function(item) {
     });
 });
 
-//pruba
-function change(item) {
+//Obtener id y agregar clases
+function Change(item, aniName) {
     let listLog = document.getElementById(item.id);
-    listLog.classList.add("leli");
+    listLog.classList.add(aniName);
     setTimeout(() => {
-        listLog.classList.remove("leli");
-    }, 1000);
+        listLog.classList.remove(aniName);
+    }, 500);
 }
+
+//Botones next y back carrusel
+let btn1 = document.getElementById("btnN");
+let btn2 = document.getElementById("btnB");
+let imagenes = [img1, img2, img3];
+let indexActual = 0;
+
+function mostrarImagen(index) {
+    imagenes.forEach((img, i) => {
+        img.style.display = i === index ? "inline" : "none";
+    });
+}
+
+btn1.addEventListener("click", function () {
+    indexActual = (indexActual - 1 + imagenes.length) % imagenes.length;
+    mostrarImagen(indexActual);
+});
+
+btn2.addEventListener("click", function () {
+    indexActual = (indexActual + 1) % imagenes.length;
+    mostrarImagen(indexActual);
+});
+
+mostrarImagen(indexActual);

@@ -32,8 +32,8 @@
                             <li class="nav-ul_li le li3"><a class="li-a li-a3" href="#"><i class="fa-solid fa-circle-info"></i> Soporte</a></li>
                         </div>
                         <div class="logCont">
-                            <li onclick="change(this)" id="lel" class="nav-ul_li lel li4"><a class="li-a liLog log1" href="#"><i class="fa-solid fa-user-plus"></i> Registrarse</a></li>
-                            <li onclick="change(this)" id="lel2" class="nav-ul_li lel li5"><a class="li-a liLog log2" href="#"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
+                            <li onclick="Change(this, 'leli')" id="lel" class="nav-ul_li li4"><a class="li-a liLog log1" href="#"><i class="fa-solid fa-user-plus"></i> Registrarse</a></li>
+                            <li onclick="Change(this, 'leli')" id="lel2" class="nav-ul_li li5"><a class="li-a liLog log2" href="#"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
                         </div>
                     </ul>
                 </div>
@@ -41,7 +41,15 @@
         </header>
         <section class="cont-sect1">
              <div class="sect1-contImgs">
-                <img class="imgCarrusel" src="https://www.universidadviu.com/sites/universidadviu.com/files/images/qu%C3%A9%20es%20un%20gamer.jpg" alt="">
+                <div class="contAllImgs">
+                    <img id="img1" class="imgCarrusel img1" src="https://www.universidadviu.com/sites/universidadviu.com/files/images/qu%C3%A9%20es%20un%20gamer.jpg" alt="img1">
+                    <img id="img2" class="imgCarrusel img2" src="https://futcardsfifa.com/app/uploads/2022/04/decoracion-habitacion-gamer-scaled.jpeg" alt="img2">
+                    <img id="img3" class="imgCarrusel img3" src="https://www.esportmaniacos.com/wp-content/uploads/2022/01/gamer-2.jpg" alt="img3">
+                </div>
+                <div class="btnsCarrusel">
+                    <button onclick="Change(this, 'btnAni')" id="btnN" class="btnCa back"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button onclick="Change(this, 'btnAni')" id="btnB" class="btnCa next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
              </div>
         </section>
         <footer>
