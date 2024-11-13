@@ -34,6 +34,7 @@ body {
     padding: 20px;
     height: 80px;
     backdrop-filter: blur(2px);
+    z-index: 9999;
 }
 
 .nav {
@@ -115,11 +116,6 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.nav-bar__label:focus {
-    outline: none;
-    box-shadow: none;
-}
-
 .nav-bar__checkbox:checked ~ .nav-ul {
     display: flex;
     opacity: 1;
@@ -170,12 +166,50 @@ body {
     border-radius: 10px;
 }
 
-.imgCarrusel {
-    object-fit: cover;
-    height: 100%;
+.contAllImgs {
+    display: flex;
     width: 100%;
 }
 
+.imgCarrusel {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    animation: jackInTheBox;
+    animation-duration: .5s;
+}
+
+.btnsCarrusel {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    padding: .5em 1em;
+}
+
+.btnCa {
+    padding: .5rem .6rem;
+    border-radius: 100%;
+    border: none;
+    color: var(--color4);
+    background-color: var(--color2);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btnAni {
+    animation: bounceIn;
+    animation-duration: .45s;
+}
+
+.img1 {
+    display: inline;
+}
+
+.img2, .img3 {
+    display: none;
+}
 /*Responsive*/
 @media screen and (min-width: 1024px) {
     .nav-bar__label{
@@ -223,7 +257,7 @@ body {
 
     .leli {
         animation: pulse;
-        animation-duration: 1s;
+        animation-duration: .45s;
     }
 
     .li-a1 {
@@ -233,5 +267,13 @@ body {
 
     .cont-sect1 {
         height: 100vh;
+    }
+
+    .btnsCarrusel {
+        top: 50%;
+    }
+
+    .btnCa {
+        padding: .8rem .9rem;
     }
 }
