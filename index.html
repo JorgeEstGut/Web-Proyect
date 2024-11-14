@@ -5,21 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NightFang Enterteinment</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="./icons/ico.ico" type="image/svg">
+        <link rel="shortcut icon" href="./icons/logo.svg" type="image/svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script src="https://kit.fontawesome.com/02e5e8c236.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body id="main" class="mainCont">
         <header class="cont-nav">
             <!--Barra de navegación-->
             <nav class="nav">
                 <!--Logo-->
-                <div class="nav-img">
+                <span class="nav-img">
                     <img class="nav-img_logo" src="./icons/ico-logo.svg" alt="logo">
-                </div>
+                </span>
                 <!--Menu Hamburguesa-->
                 <div class="nav-bar">
                     <input class="nav-bar__checkbox" type="checkbox" name="checkbox" id="menu">
@@ -27,30 +27,45 @@
                     <!--Lista de Secciones-->
                     <ul class="nav-ul">
                         <div class="listCont">
-                            <li class="nav-ul_li le li1"><a class="li-a li-a1" href="#"><i class="fa-solid fa-handshake"></i> Sobre Nosotros</a></li>
+                            <li class="nav-ul_li le li1"><a class="li-a li-a1" href="#/inicio" onclick="showSects()"><i class="fa-solid fa-handshake"></i> Sobre Nosotros</a></li>
                             <li class="nav-ul_li le li2"><a class="li-a li-a2" href="#"><i class="fa-solid fa-gamepad"></i> Juegos</a></li>
                             <li class="nav-ul_li le li3"><a class="li-a li-a3" href="#"><i class="fa-solid fa-circle-info"></i> Soporte</a></li>
                         </div>
                         <div class="logCont">
                             <li onclick="Change(this, 'leli')" id="lel" class="nav-ul_li li4"><a class="li-a liLog log1" href="#"><i class="fa-solid fa-user-plus"></i> Registrarse</a></li>
-                            <li onclick="Change(this, 'leli')" id="lel2" class="nav-ul_li li5"><a class="li-a liLog log2" href="#"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
+                            <li onclick="Change(this, 'leli')" id="lel2" class="nav-ul_li li5"><a class="li-a liLog log2" href="#/sect1-art2" onclick="showSectLog()"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
                         </div>
                     </ul>
                 </div>
             </nav>
         </header>
-        <section class="cont-sect1">
-             <div class="sect1-contImgs">
+        <section id="sect1" class="cont-sect1">
+            <article id="sect1-art1" class="art1-Ca">
                 <div class="contAllImgs">
-                    <img id="img1" class="imgCarrusel img1" src="https://www.universidadviu.com/sites/universidadviu.com/files/images/qu%C3%A9%20es%20un%20gamer.jpg" alt="img1">
-                    <img id="img2" class="imgCarrusel img2" src="https://futcardsfifa.com/app/uploads/2022/04/decoracion-habitacion-gamer-scaled.jpeg" alt="img2">
-                    <img id="img3" class="imgCarrusel img3" src="https://www.esportmaniacos.com/wp-content/uploads/2022/01/gamer-2.jpg" alt="img3">
+                    <img id="img1" class="imgCarrusel img1" src="./imgs/Ca-img1.jpg" alt="img1">
+                    <img id="img2" class="imgCarrusel img2" src="./imgs/Ca-img2.jpeg" alt="img2">
+                    <img id="img3" class="imgCarrusel img3" src="./imgs/Ca-img3.jpg" alt="img3">
                 </div>
                 <div class="btnsCarrusel">
                     <button onclick="Change(this, 'btnAni')" id="btnN" class="btnCa back"><i class="fa-solid fa-arrow-left"></i></button>
                     <button onclick="Change(this, 'btnAni')" id="btnB" class="btnCa next"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
-             </div>
+            </article>
+            <article id="sect1-art2" class="art2-lo">
+                <div class="boxLog">
+                    <span class="box-contLogo">
+                        <img src="./icons/logo.svg" alt="logo">
+                    </span>
+                    <form action="" class="box-contForm">
+                        <h2 class="textForm">Iniciar Sesión</h2>
+                        <label class="textLab" for="email">Correo Electronico</label>
+                        <input class="inp" type="email" name="email" id="email" required>
+                        <label class="textLab" for="password">Contraseña</label>
+                        <input class="inp" type="password" name="password" id="password" required>
+                        <button class="signIn">Entrar</button>
+                    </form>
+                </div>
+            </article>
         </section>
         <footer>
 

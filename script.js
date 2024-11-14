@@ -19,11 +19,11 @@ menuItems.forEach(function(item) {
 });
 
 //Obtener id y agregar clases
-function Change(item, aniName) {
+function Change(item, claName) {
     let listLog = document.getElementById(item.id);
-    listLog.classList.add(aniName);
+    listLog.classList.add(claName);
     setTimeout(() => {
-        listLog.classList.remove(aniName);
+        listLog.classList.remove(claName);
     }, 500);
 }
 
@@ -50,3 +50,26 @@ btn2.addEventListener("click", function () {
 });
 
 mostrarImagen(indexActual);
+
+//mostrar seccion de logeo
+function showSectLog() {
+    let art1 = document.getElementById("sect1-art1");
+    let art2 = document.getElementById("sect1-art2");
+    let main = document.getElementById("main");
+    let sect1 = document.getElementById("sect1");
+    art1.style.display = "none";
+    art2.style.display = "flex";
+    main.classList.add("Mcont2");
+    sect1.classList.add("contLog");
+}
+
+function showSects() {
+    let art1 = document.getElementById("sect1-art1");
+    let art2 = document.getElementById("sect1-art2");
+    let main = document.getElementById("main");
+    let sect1 = document.getElementById("sect1");
+    art1.style.display = "flex";
+    art2.style.display = "none";
+    main.classList.remove("Mcont2");
+    sect1.classList.remove("contLog");
+}
