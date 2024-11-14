@@ -62,7 +62,6 @@ btn2.addEventListener("click", function () {
 });
 
 mostrarImagen(indexActual);
-avanzarAutomatico();
 
 //mostrar seccion de logeo
 function showSectLog() {
