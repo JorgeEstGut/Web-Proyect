@@ -220,6 +220,7 @@
     display: flex;
     align-items: center;
     height: 100%;
+    max-width: auto;
     overflow: hidden;
     border-radius: 10px;
     animation: fadeInUpBig;
@@ -236,8 +237,15 @@
     border-radius: 10px;
     height: 100%;
     width: 100%;
-    animation: jackInTheBox;
-    animation-duration: .5s;
+    position: relative;
+    top: -100%;
+    left: 15%;
+    z-index: -1;
+}
+
+.contImg {
+    animation: fadeIn;
+    animation-duration: 2s;
 }
 
 .btnsCarrusel {
@@ -269,6 +277,21 @@
 
 .img2, .img3 {
     display: none;
+}
+
+/*Texto en carrusel*/
+.contImg > span {
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    border-radius: 0 6rem 0rem 0;
+    color: var(--color5);
+    padding: 7%;
+    gap: 7px;
+    font-size: .8rem;
 }
 
 /*Sección de Login*/
@@ -393,6 +416,8 @@
         color: var(--color1);
     }
 
+    /*Seccion 1*/
+
     .cont-sect1 {
         height: 100vh;
     }
@@ -403,6 +428,11 @@
 
     .btnCa {
         padding: .8rem .9rem;
+    }
+
+    .contImg > span{
+        border-radius: 0 20rem 0 0;
+        font-size: 1.2rem;
     }
 
     /*SeccionLogeo*/
