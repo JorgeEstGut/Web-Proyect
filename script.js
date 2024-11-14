@@ -73,3 +73,11 @@ function showSects() {
     main.classList.remove("Mcont2");
     sect1.classList.remove("contLog");
 }
+
+//pre-load
+window.onload = function () {
+    let preLoad = document.getElementById("preLoad");
+    setTimeout(() => {
+        preLoad.style.display = "none";
+    }, 4000);
+}
