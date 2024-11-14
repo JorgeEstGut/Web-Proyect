@@ -39,17 +39,30 @@ function mostrarImagen(index) {
     });
 }
 
+// Avanzar automáticamente en el carrusel
+function avanzarAutomatico() {
+    indexActual = (indexActual + 1) % imagenes.length;
+    mostrarImagen(indexActual);
+}
+
+let intervalo = setInterval(avanzarAutomatico, 5000);
+
 btn1.addEventListener("click", function () {
+    clearInterval(intervalo);
     indexActual = (indexActual - 1 + imagenes.length) % imagenes.length;
     mostrarImagen(indexActual);
+    intervalo = setInterval(avanzarAutomatico, 5000);
 });
 
 btn2.addEventListener("click", function () {
+    clearInterval(intervalo);
     indexActual = (indexActual + 1) % imagenes.length;
     mostrarImagen(indexActual);
+    intervalo = setInterval(avanzarAutomatico, 5000);
 });
 
 mostrarImagen(indexActual);
+avanzarAutomatico();
 
 //mostrar seccion de logeo
 function showSectLog() {
