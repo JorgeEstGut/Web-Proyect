@@ -20,7 +20,7 @@
 .mainCont {
     background-color: var(--color3);
     animation: fadeInUp;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 .Mcont2 {
@@ -225,6 +225,8 @@
     min-height: 100vh;
     display: flex;
     width: 100%;
+    animation: fadeIn;
+    animation-duration: 2s;
 }
 
 .art2-lo {
