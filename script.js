@@ -93,9 +93,9 @@ function showSects() {
 window.onload = function () {
     let preLoad = document.getElementById("preLoad");
     let sect2 = document.getElementById("sect2");
-    sect2.style.display = "none";
+    sect2.classList.add("cont2");
     setTimeout(() => {
         preLoad.style.display = "none";
-        sect2.style.display = "flex";
+        sect2.classList.remove("cont2");
     }, 4000);
 }
