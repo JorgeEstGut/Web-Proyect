@@ -260,7 +260,7 @@
     overflow: hidden;
     border-radius: 10px;
     animation: fadeInUpBig;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .contAllImgs {
@@ -422,6 +422,8 @@
 .cont2-text, .cont2-img {
     height: 100%;
     color: var(--color4);
+    animation: bounceInLeft;
+    animation-duration: 2s;
 }
 
 .cont2-text {
