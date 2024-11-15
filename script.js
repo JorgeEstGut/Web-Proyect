@@ -69,10 +69,12 @@ function showSectLog() {
     let art2 = document.getElementById("sect1-art2");
     let main = document.getElementById("main");
     let sect1 = document.getElementById("sect1");
+    let sect2 = document.getElementById("sect2");
     art1.style.display = "none";
     art2.style.display = "flex";
     main.classList.add("Mcont2");
     sect1.classList.add("contLog");
+    sect2.classList.add("cont2");
 }
 
 function showSects() {
@@ -84,12 +86,16 @@ function showSects() {
     art2.style.display = "none";
     main.classList.remove("Mcont2");
     sect1.classList.remove("contLog");
+    sect2.classList.remove("cont2");
 }
 
 //pre-load
 window.onload = function () {
     let preLoad = document.getElementById("preLoad");
+    let sect2 = document.getElementById("sect2");
+    sect2.style.display = "none";
     setTimeout(() => {
         preLoad.style.display = "none";
+        sect2.style.display = "flex";
     }, 4000);
 }

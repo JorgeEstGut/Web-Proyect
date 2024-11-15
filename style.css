@@ -400,12 +400,67 @@
     align-self: end;
 }
 
+/*Seccion 2*/
+.cont-sect2 {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cont2 {
+    display: none;
+}
+
+.sect2-art1 {
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cont2-text, .cont2-img {
+    height: 100%;
+    color: var(--color4);
+}
+
+.cont2-text {
+    flex: 1;
+}
+
+.cont2-img {
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cont2-text > h3{
+    font-size: 2rem;
+}
+
+.aboutUs-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 /*Responsive*/
 @media screen and (min-width: 1024px) {
+    /*Checkbox*/
     .nav-bar__label{
         display: none;
     }
+
+    /*header*/
+    .cont-nav {
+        height: 11vh;
+    }
     
+    .nav {
+        height: 8vh;
+    }
     /*Nav-listas*/
     .nav-bar {
         width: 100%;
@@ -430,7 +485,7 @@
         cursor: pointer;
         padding: 0;
         -webkit-tap-highlight-color: transparent;
-        font-size: .8em;
+        font-size: 2vh;
         font-weight: 400;
         opacity: 1;
     }
@@ -487,8 +542,13 @@
 
     .contImg > span{
         border-radius: 0 20rem 0 0;
-        font-size: 1.2rem;
         min-width: 45%;
+        h2 {
+            font-size: 3.2vh;
+        }
+        p {
+            font-size: 3vh;
+        }
     }
 
     /*SeccionLogeo*/
@@ -505,5 +565,20 @@
     .textLab {
         font-size: .9em;
         font-weight: 100;
+    }
+
+    /*Seccion 2*/
+    .cont-sect2 {
+        height: 100vh;
+    }
+
+    .cont2-text {
+        h3 {
+            font-size: 5vh;
+        }
+
+        p {
+            font-size: 3vh;
+        }
     }
 }
