@@ -7,6 +7,36 @@
     font-family: "Roboto", sans-serif;
 }
 
+/*Scroll Bar*/
+
+body {
+    --sb-track-color: var(--color3);
+    --sb-thumb-color: var(--color2);
+    --sb-size: 14px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: .5vw;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: .5vw;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
 /*Variables*/
 :root {
     --color1: #000000;
@@ -101,10 +131,10 @@
     align-items: center;
     background-color: var(--color2);
     color: var(--color4);
-    border-radius: 10px;
+    border-radius: .5vw;
     height: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 2vw;
+    padding-right: 2vw;
     animation: bounceIn;
     animation-duration: .4s;
     position: relative;
@@ -127,7 +157,7 @@
     translate: -50% -50%;
     z-index: -1;
     padding: 3px;
-    border-radius: 10px;
+    border-radius: .5vw;
     animation: 3s spin linear infinite;
 }
 
@@ -151,10 +181,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80%;
 }
 
 .nav-img_logo {
-    height: 36px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 /*Nav-listas*/
@@ -258,7 +291,7 @@
     height: 100%;
     max-width: auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: .5vw;
     animation: fadeInUpBig;
     animation-duration: 1s;
 }
@@ -271,7 +304,7 @@
 
 .imgCarrusel {
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: .5vw;
     width: calc(100% - 40px);
     position: absolute;
     height: 20rem;
@@ -339,8 +372,7 @@
     min-height: 100vh;
     display: flex;
     width: 100%;
-    animation: fadeIn;
-    animation-duration: 2s;
+    align-items: center;
 }
 
 .art2-lo {
@@ -348,6 +380,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
     animation: fadeInDownBig;
     animation-duration: 2s;
 }
@@ -356,7 +389,7 @@
     min-height: 5rem;
     padding: .5rem;
     background-color: var(--color2);
-    border-radius: 10px;
+    border-radius: .5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -398,6 +431,86 @@
     width: 7em;
     margin-top: 1em;
     align-self: end;
+    cursor: pointer;
+}
+
+/*Sección de registro*/
+/*Articulo 3*/
+.art3-re {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    animation: fadeInUpBig;
+    animation-duration: 2s;
+}
+/*Contenedor de img y texto fomulario*/
+.boxLog2 {
+    background-color: var(--color2);
+    padding: 10px;
+    border-radius: .5vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+/*Formulario - Registro*/
+/*Sign Up*/
+.box-contForm2 {
+    min-width: 50%;
+    padding: 1rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: var(--color4);
+    gap: 10px;
+}
+/*Labels de inputs*/
+.textLab2 {
+    font-weight: 100;
+}
+
+/*inputs*/
+.inp2 {
+    padding: .5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color3);
+    color: var(--color4);
+    outline: none;
+    flex: 1;
+    max-width: 20rem;
+}
+
+/*contenedor imagen*/
+.box-contLogo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/*boton registro*/
+.signUp {
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: var(--color5);
+    font-weight: 500;
+    width: 7em;
+    margin-top: 1em;
+    align-self: end;
+    cursor: pointer;
 }
 
 /*Seccion 2*/
@@ -485,7 +598,6 @@
 
     .nav-ul_li {
         cursor: pointer;
-        padding: 0;
         -webkit-tap-highlight-color: transparent;
         font-size: 2vh;
         font-weight: 400;
@@ -493,7 +605,7 @@
     }
 
     .li-a {
-        padding: .41rem 1rem;
+        padding: 1vh 1.5vw;
         min-width: 4rem;
     }
 
@@ -567,6 +679,16 @@
     .textLab {
         font-size: .9em;
         font-weight: 100;
+    }
+
+    /*Sign Up*/
+    /*Contenedor de img y texto fomulario*/
+    .boxLog2 {
+        max-width: 50rem;
+    }
+    /*inputs*/
+    .inp2 {
+        max-width: 20rem;
     }
 
     /*Seccion 2*/

@@ -63,27 +63,36 @@ btn2.addEventListener("click", function () {
 
 mostrarImagen(indexActual);
 
-//mostrar seccion de logeo
+//mostrar seccion de logeo y registro
+let art1 = document.getElementById("sect1-art1");
+let art2 = document.getElementById("sect1-art2");
+let art3 = document.getElementById("sect1-art3");
+let main = document.getElementById("main");
+let sect1 = document.getElementById("sect1");
+let sect2 = document.getElementById("sect2");
+
 function showSectLog() {
-    let art1 = document.getElementById("sect1-art1");
-    let art2 = document.getElementById("sect1-art2");
-    let main = document.getElementById("main");
-    let sect1 = document.getElementById("sect1");
-    let sect2 = document.getElementById("sect2");
     art1.style.display = "none";
     art2.style.display = "flex";
+    art3.style.display = "none";
     main.classList.add("Mcont2");
     sect1.classList.add("contLog");
     sect2.classList.add("cont2");
 }
 
-function showSects() {
-    let art1 = document.getElementById("sect1-art1");
-    let art2 = document.getElementById("sect1-art2");
-    let main = document.getElementById("main");
-    let sect1 = document.getElementById("sect1");
+function showSectReg() {
+    art1.style.display = "none";
+    art2.style.display = "none";
+    art3.style.display = "flex";
+    main.classList.add("Mcont2");
+    sect1.classList.add("contLog");
+    sect2.classList.add("cont2");
+}
+//mostrar seccion 1
+function showSect1() {
     art1.style.display = "flex";
     art2.style.display = "none";
+    art3.style.display = "none";
     main.classList.remove("Mcont2");
     sect1.classList.remove("contLog");
     sect2.classList.remove("cont2");

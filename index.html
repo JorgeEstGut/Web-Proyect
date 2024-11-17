@@ -17,98 +17,118 @@
         <div id="preLoad" class="loader">
             <div class="gyro"></div>
         </div>
+        <div class="container">
         <!--Barra de navegación-->
-        <header class="cont-nav">
-            <nav class="nav">
-                <!--Logo-->
-                <span class="nav-img">
-                    <img class="nav-img_logo" src="./icons/ico-logo.svg" alt="logo">
-                </span>
-                <!--Menu Hamburguesa-->
-                <div class="nav-bar">
-                    <input class="nav-bar__checkbox" type="checkbox" name="checkbox" id="menu">
-                    <label class="nav-bar__label" for="menu"><i id="menu-icon" class="fa-solid fa-bars"></i></label>
-                    <!--Lista de Secciones-->
-                    <ul class="nav-ul">
-                        <div class="listCont">
-                            <li class="nav-ul_li le li1"><a class="li-a li-a1" href="#/inicio" onclick="showSects()"><i class="fa-solid fa-handshake"></i> Sobre Nosotros</a></li>
-                            <li class="nav-ul_li le li2"><a class="li-a li-a2" href="#"><i class="fa-solid fa-gamepad"></i> Juegos</a></li>
-                            <li class="nav-ul_li le li3"><a class="li-a li-a3" href="#"><i class="fa-solid fa-circle-info"></i> Soporte</a></li>
-                        </div>
-                        <div class="logCont">
-                            <li onclick="Change(this, 'leli')" id="lel" class="nav-ul_li li4"><a class="li-a liLog log1" href="#"><i class="fa-solid fa-user-plus"></i> Registrarse</a></li>
-                            <li onclick="Change(this, 'leli')" id="lel2" class="nav-ul_li li5"><a class="li-a liLog log2" href="#/sect1-art2" onclick="showSectLog()"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
-                        </div>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <section id="sect1" class="cont-sect1">
-            <!--art 1 - Carrusel-->
-            <article id="sect1-art1" class="art1-Ca">
-                <div class="contAllImgs">
-                    <div id="img1" class="contImg img1">
-                        <span>
-                            <h2>La Aventura que Estabas Esperando</h2>
-                            <p>Sumérgete en un mundo de emoción con NightFang Enterteinment.</p>
-                        </span>
-                        <img class="imgCarrusel" src="./imgs/Ca-img2.jpeg" alt="img1">
-                    </div>
-                    <div id="img2" class="contImg img2">
-                        <span>
-                            <h2>Haz Realidad tus Sueños de Juego</h2>
-                            <p>Únete a la diversión y explora nuevas aventuras cada día.</p>
-                        </span>
-                        <img class="imgCarrusel" src="./imgs/Ca-img3.jpg" alt="img2">
-                    </div>
-                    <div id="img3" class="contImg img3">
-                        <span>
-                            <h2>Donde la Emoción Nunca Termina</h2>
-                            <p>Prepárate para jugar, soñar y ganar con NightFang Enterteinment.</p>
-                        </span>
-                        <img class="imgCarrusel" src="./imgs/Ca-img1.jpg" alt="img3">
-                    </div>
-                </div>
-                <div class="btnsCarrusel">
-                    <button onclick="Change(this, 'btnAni')" id="btnN" class="btnCa back"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button onclick="Change(this, 'btnAni')" id="btnB" class="btnCa next"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-            </article>
-            <!--art2 - Logueo-->
-            <article id="sect1-art2" class="art2-lo">
-                <div class="boxLog">
-                    <span class="box-contLogo">
-                        <img src="./icons/logo.svg" alt="logo">
+            <header class="cont-nav">
+                <nav class="nav">
+                    <!--Logo-->
+                    <span class="nav-img">
+                        <img class="nav-img_logo" src="./icons/ico-logo.svg" alt="logo">
                     </span>
-                    <form action="" class="box-contForm">
-                        <h2 class="textForm">Iniciar Sesión</h2>
-                        <label class="textLab" for="email">Correo electrónico</label>
-                        <input class="inp" type="email" name="email" id="email" required>
-                        <label class="textLab" for="password">Contraseña</label>
-                        <input class="inp" type="password" name="password" id="password" required>
-                        <button class="signIn">Entrar</button>
-                    </form>
-                </div>
-            </article>
-        </section>
-        <section id="sect2" class="cont-sect2">
-            <article class="sect2-art1">
-                <span class="cont2-text">
-                    <h3>Sobre Nosotros</h3>
-                    <br>
-                    <p>En NightFang Enterteinment, nuestra misión es llevar a los jugadores a aventuras inolvidables que despierten la emoción. Desde nuestra fundación, hemos buscado redefinir el entretenimiento digital, combinando tecnología de vanguardia con narrativas inmersivas y un diseño de juego innovador. Nos dedicamos a crear titulos que desafien los limites de lo posible y que resuenen con jugadores de todo el mundo.
-                        <br><br>
-                        Nuestro equipo está formado por artistas, programadores y narradores de primer nivel, todos comprometidos con la visión de construir experiencias de juego que no solo entretengan, sino que también conecten a las personas y las inspiren a soñar. En NightFang Enterteinment, cada juego es una aventura épica en sí misma, uniendo calidad y originalidad con la promesa de que cada experiencia séra única y emocionante.
-                        <br><br>
-                        ¿Listo para unirte a la manada? Con NightFang, la aventura apenas comienza.
-                    </p>
-                </span>
-                <span class="cont2-img"><img class="aboutUs-img" src="./icons/logo.svg" alt="logo"></span>
-            </article>
-        </section>
-        <footer>
+                    <!--Menu Hamburguesa-->
+                    <div class="nav-bar">
+                        <input class="nav-bar__checkbox" type="checkbox" name="checkbox" id="menu">
+                        <label class="nav-bar__label" for="menu"><i id="menu-icon" class="fa-solid fa-bars"></i></label>
+                        <!--Lista de Secciones-->
+                        <ul class="nav-ul">
+                            <div class="listCont">
+                                <li class="nav-ul_li le li1"><a class="li-a li-a1" href="#/inicio" onclick="showSect1()"><i class="fa-solid fa-handshake"></i> Sobre Nosotros</a></li>
+                                <li class="nav-ul_li le li2"><a class="li-a li-a2" href="#"><i class="fa-solid fa-gamepad"></i> Juegos</a></li>
+                                <li class="nav-ul_li le li3"><a class="li-a li-a3" href="#"><i class="fa-solid fa-circle-info"></i> Soporte</a></li>
+                            </div>
+                            <div class="logCont">
+                                <li onclick="Change(this, 'leli')" id="lel" class="nav-ul_li li4"><a class="li-a liLog log1" href="#/sect1-art3" onclick="showSectReg()"><i class="fa-solid fa-user-plus"></i> Registrarse</a></li>
+                                <li onclick="Change(this, 'leli')" id="lel2" class="nav-ul_li li5"><a class="li-a liLog log2" href="#/sect1-art2" onclick="showSectLog()"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section id="sect1" class="cont-sect1">
+                <!--art 1 - Carrusel-->
+                <article id="sect1-art1" class="art1-Ca">
+                    <div class="contAllImgs">
+                        <div id="img1" class="contImg img1">
+                            <span>
+                                <h2>La Aventura que Estabas Esperando</h2>
+                                <p>Sumérgete en un mundo de emoción con NightFang Enterteinment.</p>
+                            </span>
+                            <img class="imgCarrusel" src="./imgs/Ca-img2.jpeg" alt="img1">
+                        </div>
+                        <div id="img2" class="contImg img2">
+                            <span>
+                                <h2>Haz Realidad tus Sueños de Juego</h2>
+                                <p>Únete a la diversión y explora nuevas aventuras cada día.</p>
+                            </span>
+                            <img class="imgCarrusel" src="./imgs/Ca-img3.jpg" alt="img2">
+                        </div>
+                        <div id="img3" class="contImg img3">
+                            <span>
+                                <h2>Donde la Emoción Nunca Termina</h2>
+                                <p>Prepárate para jugar, soñar y ganar con NightFang Enterteinment.</p>
+                            </span>
+                            <img class="imgCarrusel" src="./imgs/Ca-img1.jpg" alt="img3">
+                        </div>
+                    </div>
+                    <div class="btnsCarrusel">
+                        <button onclick="Change(this, 'btnAni')" id="btnN" class="btnCa back"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button onclick="Change(this, 'btnAni')" id="btnB" class="btnCa next"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </article>
+                <!--art2 - Logueo-->
+                <article id="sect1-art2" class="art2-lo">
+                    <div class="boxLog">
+                        <span class="box-contLogo">
+                            <img src="./icons/logo.svg" alt="logo">
+                        </span>
+                        <form action="" class="box-contForm">
+                            <h2 class="textForm">Iniciar Sesión</h2>
+                            <label class="textLab" for="email">Correo electrónico</label>
+                            <input class="inp" type="email" name="email" id="email" required>
+                            <label class="textLab" for="password">Contraseña</label>
+                            <input class="inp" type="password" name="password" id="password" required>
+                            <button class="signIn">Entrar</button>
+                        </form>
+                    </div>
+                </article>
+                <!--art3 - registro-->
+                <article id="sect1-art3" class="art3-re">
+                    <div class="boxLog2">
+                        <span class="box-contLogo2">
+                            <img src="./icons/logo.svg" alt="logo">
+                        </span>
+                        <form class="box-contForm2">
+                            <h2 class="textForm2">¡Únete a NightFang Entertainment!</h2>
+                            <label class="textLab2" for="fName">Primer Nombre</label><input class="inp2" type="text" name="fName" id="fName" required>
+                            <label class="textLab2" for="sName">Segundo Nombre</label><input class="inp2" type="text" name="sName" id="sName">
+                            <label class="textLab2" for="flName">Primer Apellido</label><input class="inp2" type="text" name="flName" id="flName" required>
+                            <label class="textLab2" for="slName">Segundo Apellido</label><input class="inp2" type="text" name="slName" id="slName">
+                            <label class="textLab2" for="email2">Correo electrónico</label><input class="inp2" type="email" name="email" id="email2" required>
+                            <label class="textLab2" for="password2">Contraseña</label><input class="inp2" type="password" name="password" id="password2" required>
+                            <button class="signUp">Registrarse</button>
+                        </form>
+                    </div>
+                </article>
+            </section>
+            <section id="sect2" class="cont-sect2">
+                <article class="sect2-art1">
+                    <span class="cont2-text">
+                        <h3>Sobre Nosotros</h3>
+                        <br>
+                        <p>En NightFang Enterteinment, nuestra misión es llevar a los jugadores a aventuras inolvidables que despierten la emoción. Desde nuestra fundación, hemos buscado redefinir el entretenimiento digital, combinando tecnología de vanguardia con narrativas inmersivas y un diseño de juego innovador. Nos dedicamos a crear titulos que desafien los limites de lo posible y que resuenen con jugadores de todo el mundo.
+                            <br><br>
+                            Nuestro equipo está formado por artistas, programadores y narradores de primer nivel, todos comprometidos con la visión de construir experiencias de juego que no solo entretengan, sino que también conecten a las personas y las inspiren a soñar. En NightFang Enterteinment, cada juego es una aventura épica en sí misma, uniendo calidad y originalidad con la promesa de que cada experiencia séra única y emocionante.
+                            <br><br>
+                            ¿Listo para unirte a la manada? Con NightFang, la aventura apenas comienza.
+                        </p>
+                    </span>
+                    <span class="cont2-img"><img class="aboutUs-img" src="./icons/logo.svg" alt="logo"></span>
+                </article>
+            </section>
+            <footer>
 
-        </footer>
+            </footer>
+        </div>
         <!--JavaScript-->
         <script src="script.js" defer></script>
     </body>
