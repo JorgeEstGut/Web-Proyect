@@ -71,6 +71,9 @@ let main = document.getElementById("main");
 let sect1 = document.getElementById("sect1");
 let sect2 = document.getElementById("sect2");
 let sect3 = document.getElementById("sect3");
+let page1 = document.getElementById("p1");
+let page2 = document.getElementById("p2");
+let page3 = document.getElementById("p3");
 
 function showSectLog() {
     art1.style.display = "none";
@@ -81,6 +84,9 @@ function showSectLog() {
     sect1.classList.remove("cont2");
     sect2.classList.add("cont2");
     sect3.classList.add("cont2");
+    page1.classList.remove("li-se");
+    page2.classList.remove("li-se");
+    page3.classList.remove("li-se");
 }
 
 function showSectReg() {
@@ -92,6 +98,9 @@ function showSectReg() {
     sect1.classList.remove("cont2");
     sect2.classList.add("cont2");
     sect3.classList.add("cont2");
+    page1.classList.remove("li-se");
+    page2.classList.remove("li-se");
+    page3.classList.remove("li-se");
 }
 //mostrar seccion 1
 function showSect1() {
@@ -103,6 +112,9 @@ function showSect1() {
     sect1.classList.remove("cont2");
     sect2.classList.remove("cont2");
     sect3.classList.add("cont2");
+    page1.classList.add("li-se");
+    page2.classList.remove("li-se");
+    page3.classList.remove("li-se");
 }
 //mostrar seccion juegos
 function showSect2() {
@@ -114,6 +126,9 @@ function showSect2() {
     sect1.classList.add("cont2");
     sect2.classList.add("cont2");
     sect3.classList.remove("cont2");
+    page1.classList.remove("li-se");
+    page2.classList.add("li-se");
+    page3.classList.remove("li-se");
 }
 
 //pre-load

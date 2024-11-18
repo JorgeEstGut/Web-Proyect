@@ -132,7 +132,7 @@ body {
     align-items: center;
     background-color: var(--color2);
     color: var(--color4);
-    border-radius: .5vw;
+    border-radius: 1vw;
     height: 50px;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -158,7 +158,7 @@ body {
     translate: -50% -50%;
     z-index: -1;
     padding: 3px;
-    border-radius: .5vw;
+    border-radius: 1vw;
     animation: 3s spin linear infinite;
 }
 
@@ -293,7 +293,7 @@ body {
     height: 100%;
     max-width: auto;
     overflow: hidden;
-    border-radius: .5vw;
+    border-radius: 1vw;
     animation: fadeInUpBig;
     animation-duration: 1s;
 }
@@ -306,7 +306,7 @@ body {
 
 .imgCarrusel {
     object-fit: cover;
-    border-radius: .5vw;
+    border-radius: 1vw;
     width: calc(100% - 40px);
     position: absolute;
     height: 20rem;
@@ -391,7 +391,7 @@ body {
     min-height: 5rem;
     padding: .5rem;
     background-color: var(--color2);
-    border-radius: .5vw;
+    border-radius: 1vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -450,7 +450,7 @@ body {
 .boxLog2 {
     background-color: var(--color2);
     padding: 10px;
-    border-radius: .5vw;
+    border-radius: 1vw;
     display: flex;
     flex-wrap: wrap;
     flex: 1;
@@ -601,8 +601,9 @@ body {
     overflow: hidden;
     cursor: pointer;
     position: relative;
+    border-radius: 1vw;
     box-shadow: 5px 5px 7px #00000054;
-    background-color: var(--color3);
+    background-color: var(--color2);
   }
 /*juegos*/
 .portGame {
@@ -667,6 +668,11 @@ body {
     
     .nav {
         height: 8vh;
+        border-radius: .5vw;
+    }
+
+    .nav::after, .nav::before {
+        border-radius: .5vw;
     }
     /*Nav-listas*/
     .nav-bar {
@@ -711,12 +717,18 @@ body {
         animation-duration: .45s;
     }
 
-    .li-a1 {
+    .li-se {
         background-color: var(--color5);
         color: var(--color1);
+        animation: fadeIn;
+        animation-duration: .5s;
     }
 
     /*Seccion 1*/
+
+    .art1-Ca {
+        border-radius: .5vw;
+    }
 
     .cont-sect1 {
         height: 100vh;
@@ -732,6 +744,7 @@ body {
         width: 100%;
         min-height: 100vh;
         top: 50%;
+        border-radius: .5vw;
     }
 
     .btnsCarrusel {
@@ -760,6 +773,7 @@ body {
     /*SeccionLogeo*/
     .boxLog {
         padding: .5em;
+        border-radius: .5vw;
     }
 
     .box-contForm {
@@ -777,6 +791,7 @@ body {
     /*Contenedor de img y texto fomulario*/
     .boxLog2 {
         max-width: 50rem;
+        border-radius: .5vw;
     }
     /*inputs*/
     .inp2 {
@@ -811,6 +826,10 @@ body {
     }
     
     /*titulos juego*/
+    .item {
+        border-radius: .5vw;
+    }
+
     .item span{
         margin-top: 18rem;
         z-index: 2;
@@ -826,6 +845,7 @@ body {
         
         .portGame {
             transform: scale(1.1);
+            opacity: .5;
         }
     }
 }
