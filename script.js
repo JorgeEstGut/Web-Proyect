@@ -71,6 +71,7 @@ let main = document.getElementById("main");
 let sect1 = document.getElementById("sect1");
 let sect2 = document.getElementById("sect2");
 let sect3 = document.getElementById("sect3");
+let sect4 = document.getElementById("sect4");
 let page1 = document.getElementById("p1");
 let page2 = document.getElementById("p2");
 let page3 = document.getElementById("p3");
@@ -84,6 +85,7 @@ function showSectLog() {
     sect1.classList.remove("cont2");
     sect2.classList.add("cont2");
     sect3.classList.add("cont2");
+    sect4.classList.add("cont2");
     page1.classList.remove("li-se");
     page2.classList.remove("li-se");
     page3.classList.remove("li-se");
@@ -98,6 +100,7 @@ function showSectReg() {
     sect1.classList.remove("cont2");
     sect2.classList.add("cont2");
     sect3.classList.add("cont2");
+    sect4.classList.add("cont2");
     page1.classList.remove("li-se");
     page2.classList.remove("li-se");
     page3.classList.remove("li-se");
@@ -112,6 +115,7 @@ function showSect1() {
     sect1.classList.remove("cont2");
     sect2.classList.remove("cont2");
     sect3.classList.add("cont2");
+    sect4.classList.add("cont2");
     page1.classList.add("li-se");
     page2.classList.remove("li-se");
     page3.classList.remove("li-se");
@@ -126,10 +130,51 @@ function showSect2() {
     sect1.classList.add("cont2");
     sect2.classList.add("cont2");
     sect3.classList.remove("cont2");
+    sect4.classList.add("cont2");
     page1.classList.remove("li-se");
     page2.classList.add("li-se");
     page3.classList.remove("li-se");
 }
+
+//mostrar seccion juegos
+function showSect3() {
+    art1.style.display = "none";
+    art2.style.display = "none";
+    art3.style.display = "none";
+    main.classList.remove("Mcont2");
+    sect1.classList.remove("contLog");
+    sect1.classList.add("cont2");
+    sect2.classList.add("cont2");
+    sect3.classList.add("cont2");
+    sect4.classList.remove("cont2");
+    page1.classList.remove("li-se");
+    page2.classList.remove("li-se");
+    page3.classList.add("li-se");
+}
+
+//Abrir respuestas - sect4
+let questions = document.querySelectorAll('.question');
+
+questions.forEach(question => {
+    question.addEventListener("click", () => {
+        const simbol = question.querySelector('i');
+        if(question.classList.contains("active")) {
+            question.classList.remove("active");
+            simbol.classList.remove('fa-minus');
+            simbol.classList.add('fa-plus');
+        } else {
+            questions.forEach(el => {
+                el.classList.remove("active")
+                const otherSimbol = el.querySelector('i');
+                otherSimbol.classList.remove('fa-minus');
+                otherSimbol.classList.add('fa-plus');
+            });
+            question.classList.add("active");
+            simbol.classList.remove('fa-plus');
+            simbol.classList.add('fa-minus');
+        }
+    });
+});
 
 //pre-load
 window.onload = function () {

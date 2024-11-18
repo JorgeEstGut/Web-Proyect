@@ -654,6 +654,63 @@ body {
     outline: none;
   }
 
+  /*Contenedor seccion 4*/
+.cont-sect4 {
+    padding: 80px 20px 20px 20px;
+}
+
+/*Articulo 1 de section 4*/
+.sect4-art1 {
+  padding: 2vw;
+  border-radius: .5rem;
+}
+/*titulo del articulo*/
+.sect4Title {
+  color: var(--color5);
+  padding: 0 1rem 1rem 1rem;
+}
+/*Contenedor de Preguntas*/
+.contQuestions {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: .5rem;
+}
+/*Contedor de Pregunta*/
+.question {
+  padding: .5rem;
+  color: var(--color5);
+  background-color: var(--color2);
+  line-height: 2rem;
+  box-shadow: 5px 5px 5px #1919197a;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  animation: fadeInLeft;
+  animation-duration: .5s;
+}
+/*contenedor de titulos*/
+.contTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*contenedor repsuestas*/
+.contAnswer {
+  position: absolute;
+  z-index: 2;
+}
+
+/*Pregunta seleccionada*/
+.active {
+  animation: fadeInRight;
+  animation-duration: .5s;
+  .contAnswer {
+    position: relative;
+  }
+}
+
 /*Responsive*/
 @media screen and (min-width: 1024px) {
     /*Checkbox*/
