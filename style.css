@@ -689,12 +689,15 @@ body {
   overflow: hidden;
   animation: fadeInLeft;
   animation-duration: .5s;
+  border-radius: .5rem;
+  -webkit-tap-highlight-color: transparent;
 }
 /*contenedor de titulos*/
 .contTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1rem;
 }
 /*contenedor repsuestas*/
 .contAnswer {
@@ -905,4 +908,7 @@ body {
             opacity: .5;
         }
     }
+
+    /*Seccion 4 - Soporte*/
+
 }
