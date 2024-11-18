@@ -689,7 +689,7 @@ body {
   overflow: hidden;
   animation: fadeInLeft;
   animation-duration: .5s;
-  border-radius: .5rem;
+  border-radius: .3rem;
   -webkit-tap-highlight-color: transparent;
 }
 /*contenedor de titulos*/
