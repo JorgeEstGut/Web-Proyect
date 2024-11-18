@@ -70,6 +70,7 @@ let art3 = document.getElementById("sect1-art3");
 let main = document.getElementById("main");
 let sect1 = document.getElementById("sect1");
 let sect2 = document.getElementById("sect2");
+let sect3 = document.getElementById("sect3");
 
 function showSectLog() {
     art1.style.display = "none";
@@ -77,7 +78,9 @@ function showSectLog() {
     art3.style.display = "none";
     main.classList.add("Mcont2");
     sect1.classList.add("contLog");
+    sect1.classList.remove("cont2");
     sect2.classList.add("cont2");
+    sect3.classList.add("cont2");
 }
 
 function showSectReg() {
@@ -86,7 +89,9 @@ function showSectReg() {
     art3.style.display = "flex";
     main.classList.add("Mcont2");
     sect1.classList.add("contLog");
+    sect1.classList.remove("cont2");
     sect2.classList.add("cont2");
+    sect3.classList.add("cont2");
 }
 //mostrar seccion 1
 function showSect1() {
@@ -95,7 +100,20 @@ function showSect1() {
     art3.style.display = "none";
     main.classList.remove("Mcont2");
     sect1.classList.remove("contLog");
+    sect1.classList.remove("cont2");
     sect2.classList.remove("cont2");
+    sect3.classList.add("cont2");
+}
+//mostrar seccion juegos
+function showSect2() {
+    art1.style.display = "none";
+    art2.style.display = "none";
+    art3.style.display = "none";
+    main.classList.remove("Mcont2");
+    sect1.classList.remove("contLog");
+    sect1.classList.add("cont2");
+    sect2.classList.add("cont2");
+    sect3.classList.remove("cont2");
 }
 
 //pre-load

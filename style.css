@@ -44,6 +44,7 @@ body {
     --color3: #323232;
     --color4: #ffffff;
     --color5: #dbdbdb;
+    --color6: #696969;
     --primary: var(--color5);
     --secondary: var(--color2)
 }
@@ -562,6 +563,96 @@ body {
     object-fit: cover;
 }
 
+/*Contenedor seccion 3*/
+.cont-sect3 {
+    padding: 80px 20px 20px 20px;
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+
+/*seccion3*/
+.sect3-art1, .sect3-art3 {
+    background-color: var(--color2);
+    padding: 2vw;
+    border-radius: .5rem;
+}
+
+.sect3-art2 {
+    padding: 2vw;
+}
+
+/*titulo-art3*/
+.title-art3 {
+    color: var(--color5);
+    font-size: 6vw;
+    padding: 2rem;
+}
+
+/*contenedor items grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    grid-auto-rows: 18rem;
+    gap: 3vw;
+  }
+/*contenedor juegos*/
+  .item {
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 5px 5px 7px #00000054;
+    background-color: var(--color3);
+  }
+/*juegos*/
+.portGame {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*titulos juego*/
+.item span{
+    position: absolute;
+    height: calc(18rem / 3);
+    width: 100%;
+    padding: .5rem;
+    text-align: left;
+    margin-top: calc(18rem / 1.5);
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+    .contTexts h4 {
+        color: var(--color5);
+        font-size: 1.2rem;
+    }
+
+    .contTexts p {
+        color: var(--color6);
+        font-size: .8rem;
+    }
+
+    .contIcons i {
+        color: var(--color6);
+    }
+  }
+
+  /*link más juegos*/
+  .cont-linkGames {
+    display: flex;
+    text-decoration: none;
+    padding: 2rem;
+    justify-content: end;
+  }
+
+  .linkGames {
+    text-decoration: none;
+    color: var(--color5);
+    outline: none;
+  }
+
 /*Responsive*/
 @media screen and (min-width: 1024px) {
     /*Checkbox*/
@@ -704,6 +795,37 @@ body {
 
         p {
             font-size: 3vh;
+        }
+    }
+
+    /*Seccion3*/
+    /*titulo-art3*/
+    .title-art3 {
+        font-size: 2.5vw;
+    }
+    
+    /*Portada Juego*/
+    .portGame {
+        transition: all .5s ease-in-out;
+        z-index: 1;
+    }
+    
+    /*titulos juego*/
+    .item span{
+        margin-top: 18rem;
+        z-index: 2;
+        transition: all .5s ease-out;
+    }
+
+    .item:hover {
+        span {
+            margin-top: calc(18rem / 1.5);
+            animation: fadeInUp;
+            animation-duration: .3s;
+        }
+        
+        .portGame {
+            transform: scale(1.1);
         }
     }
 }
