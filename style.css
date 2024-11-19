@@ -714,6 +714,80 @@ body {
   }
 }
 
+/*Footer*/
+/*Contenedor footer*/
+.addor-pie {
+    padding: 1vw;
+  }
+  
+  /*Footer caja*/
+  .containerFooter {
+    display: flex;
+    background-color: var(--color2);
+    border-radius: calc(100vw / 90);
+    color: var(--color5);
+    justify-content: space-between;
+    align-items: stretch;
+    padding: calc(100vw / 90);
+  }
+  /*contenedor logo Footer*/
+  .contLoFo {
+    width: calc(100vw / 3);
+  }
+  /*logo footer*/
+  .logoFo {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  /*contenedor 2 footer*/
+  .containe2Fo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: calc(100vw / 90) 0;
+  }
+  /*contenedor Copyright*/
+  .textCopy {
+    width: auto;
+    align-self: end;
+    text-align: center;
+  }
+  /*Texto Cpyright*/
+  .textCopy p {
+    font-size: 1.1vw;
+  }
+  /*Contenedor redes*/
+  .contSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(100vw / 90);
+    margin-right: calc(100vw / 42);
+  }
+  /*titulo footer social media*/
+  .titleSF {
+    font-size: 1.5vw;
+    font-weight: 700;
+  }
+  /*contendero Iconos Sociales*/
+  .contIcoFo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  /*iconos sociales footer*/
+  .iconosFo {
+    font-size: 2vw;
+    color: var(--color5);
+    text-decoration: none;
+  }
+  /*texto Email Footer*/
+  .emailFo {
+    font-size: 1.2vw;
+  }
+
 /*Responsive*/
 @media screen and (min-width: 1024px) {
     /*Checkbox*/
@@ -908,7 +982,4 @@ body {
             opacity: .5;
         }
     }
-
-    /*Seccion 4 - Soporte*/
-
 }

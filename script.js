@@ -75,6 +75,7 @@ let sect4 = document.getElementById("sect4");
 let page1 = document.getElementById("p1");
 let page2 = document.getElementById("p2");
 let page3 = document.getElementById("p3");
+let foot = document.getElementById("foot");
 
 function showSectLog() {
     art1.style.display = "none";
@@ -89,6 +90,7 @@ function showSectLog() {
     page1.classList.remove("li-se");
     page2.classList.remove("li-se");
     page3.classList.remove("li-se");
+    foot.classList.add("cont2");
 }
 
 function showSectReg() {
@@ -104,6 +106,7 @@ function showSectReg() {
     page1.classList.remove("li-se");
     page2.classList.remove("li-se");
     page3.classList.remove("li-se");
+    foot.classList.add("cont2");
 }
 //mostrar seccion 1
 function showSect1() {
@@ -119,6 +122,7 @@ function showSect1() {
     page1.classList.add("li-se");
     page2.classList.remove("li-se");
     page3.classList.remove("li-se");
+    foot.classList.remove("cont2");
 }
 //mostrar seccion juegos
 function showSect2() {
@@ -134,6 +138,7 @@ function showSect2() {
     page1.classList.remove("li-se");
     page2.classList.add("li-se");
     page3.classList.remove("li-se");
+    foot.classList.remove("cont2");
 }
 
 //mostrar seccion juegos
@@ -150,6 +155,7 @@ function showSect3() {
     page1.classList.remove("li-se");
     page2.classList.remove("li-se");
     page3.classList.add("li-se");
+    foot.classList.remove("cont2");
 }
 
 //Abrir respuestas - sect4
@@ -181,8 +187,10 @@ window.onload = function () {
     let preLoad = document.getElementById("preLoad");
     let sect2 = document.getElementById("sect2");
     sect2.classList.add("cont2");
+    foot.classList.add("cont2");
     setTimeout(() => {
         preLoad.style.display = "none";
         sect2.classList.remove("cont2");
+        foot.classList.remove("cont2");
     }, 4000);
 }
