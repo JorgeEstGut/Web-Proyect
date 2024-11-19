@@ -717,45 +717,43 @@ body {
 /*Footer*/
 /*Contenedor footer*/
 .addor-pie {
-    padding: 1vw;
+    padding: 1rem;
   }
   
   /*Footer caja*/
   .containerFooter {
     display: flex;
     background-color: var(--color2);
-    border-radius: calc(100vw / 90);
+    border-radius: calc(100vw / 95);
     color: var(--color5);
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
     padding: calc(100vw / 90);
+    flex-wrap: wrap;
+    gap: .5rem;
   }
   /*contenedor logo Footer*/
   .contLoFo {
-    width: calc(100vw / 3);
+    min-width: calc(100vw / 3);
   }
   /*logo footer*/
   .logoFo {
     object-fit: cover;
     height: 100%;
     width: 100%;
-  }
-  /*contenedor 2 footer*/
-  .containe2Fo {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: calc(100vw / 90) 0;
+    flex: 1;
   }
   /*contenedor Copyright*/
   .textCopy {
-    width: auto;
     align-self: end;
     text-align: center;
+    min-width: 100%;
+    margin-top: 10px;
   }
   /*Texto Cpyright*/
   .textCopy p {
-    font-size: 1.1vw;
+    padding: .5rem;
+    font-size: .9rem;
   }
   /*Contenedor redes*/
   .contSocial {
@@ -764,28 +762,29 @@ body {
     align-items: center;
     justify-content: center;
     gap: calc(100vw / 90);
-    margin-right: calc(100vw / 42);
+    min-width: calc(100vw / 3);
   }
   /*titulo footer social media*/
   .titleSF {
-    font-size: 1.5vw;
+    font-size: 1.2rem;
     font-weight: 700;
   }
   /*contendero Iconos Sociales*/
   .contIcoFo {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: calc(100vw / 30);
     width: 100%;
   }
   /*iconos sociales footer*/
   .iconosFo {
-    font-size: 2vw;
+    font-size: 1.7rem;
     color: var(--color5);
     text-decoration: none;
   }
   /*texto Email Footer*/
   .emailFo {
-    font-size: 1.2vw;
+    font-size: 1rem;
   }
 
 /*Responsive*/
@@ -982,4 +981,29 @@ body {
             opacity: .5;
         }
     }
+    /*Footer*/
+    /*contenedor footer*/
+  .containerFooter {
+    justify-content: space-between;
+  }
+  /*Texto Cpyright*/
+  .textCopy p {
+    font-size: 1.2vw;
+  }
+  /*contendero Iconos Sociales*/
+  .contIcoFo {
+    gap: calc(100vw / 70);
+  }
+  /*titulo footer social media*/
+  .titleSF {
+    font-size: 1.5vw;
+  }
+  /*iconos sociales footer*/
+  .iconosFo {
+    font-size: calc(100vw / 40);
+  }
+  /*texto Email Footer*/
+  .emailFo {
+    font-size: 1.5vw;
+  }
 }
