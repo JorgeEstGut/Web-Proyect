@@ -448,6 +448,87 @@
     object-fit: cover;
 }
 
+/*footeer*/
+.addor-pie {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+  }
+  
+    .footercentro {
+    width: 1300px;
+    height: auto; 
+    background-color: #191919;
+    border-radius: 1.5%;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px; 
+  }
+  
+ 
+  .footercentro img {
+    height: 250px;
+    width: 250px;
+  }
+  
+ 
+  .contenido-derecha {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-align: left;
+    gap: 15px; 
+  }
+  
+  
+  .footertext {
+    color: white;
+    padding-top: 50px;
+    padding-left: 650px;
+    font-size: 1.5rem; 
+    margin: 0; 
+  }
+  
+  
+  .iconos {
+    display: flex;
+    gap: 15px; 
+    padding-left: 650px;
+  }
+  
+  .footerimg2 {
+    font-size: 30px; 
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .footerimg2:hover {
+    color: #007bff; 
+  }
+  
+
+  .correo p {
+    margin: 0;
+    color: white;
+    padding-left: 600px;
+    font-size: 1rem; 
+  }
+  
+  
+  .derechos p {
+    margin: 0;
+    color: white;
+    font-size: 0.9rem; 
+    padding-top: 50px;
+    padding-left: 65px;
+    opacity: 0.8;
+  }
+  
+
 /*Responsive*/
 @media screen and (min-width: 1024px) {
     /*Checkbox*/
@@ -582,5 +663,11 @@
         p {
             font-size: 3vh;
         }
+
     }
-}
+    /*footer*/
+    
+    }
+
+
+
