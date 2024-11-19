@@ -687,7 +687,7 @@ body {
   z-index: 1;
   cursor: pointer;
   overflow: hidden;
-  animation: fadeInLeft;
+  animation: pulse;
   animation-duration: .5s;
   border-radius: .3rem;
   -webkit-tap-highlight-color: transparent;
@@ -707,7 +707,7 @@ body {
 
 /*Pregunta seleccionada*/
 .active {
-  animation: fadeInRight;
+  animation: flipInX;
   animation-duration: .5s;
   .contAnswer {
     position: relative;
